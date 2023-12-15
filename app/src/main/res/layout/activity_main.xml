@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewExchangeRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="환율 정보"
+            android:textSize="17sp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <!-- 통화 입력 -->
+        <EditText
+            android:id="@+id/editTextAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="금액을 입력하세요."
+            android:inputType="numberDecimal"
+            android:layout_below="@id/textViewExchangeRate"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 계산 버튼 -->
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="환율 계산"
+            android:layout_below="@id/editTextAmount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <!-- 변환된 금액 -->
+        <TextView
+            android:id="@+id/textViewConvertedAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_below="@id/buttonCalculate"
+            android:layout_marginTop="16dp"/>
+    </RelativeLayout>
+</ScrollView>
